@@ -59,21 +59,36 @@ PgAdmin 4 nos permite acceder a todas las funcionalidades de la base de datos, c
 
 Figura 1. Comando **"docker -v "**. 
 
+<img width="877" alt="1" src="https://github.com/user-attachments/assets/99aecc76-4b27-4497-a28b-28b32f6106c4" />
+
+
 
 **Paso 2:** Creamos el contenedor de PostgreSQL (`dbsql`) ejecutando el siguiente comando para crear el contenedor y exponerlo en el puerto 5432.
 
 Figura 2. Comando **"docker run -d --name dbsql -e"**.
+
+<img width="877" alt="1" src="https://github.com/user-attachments/assets/99aecc76-4b27-4497-a28b-28b32f6106c4" />
+
+<img width="929" alt="3" src="https://github.com/user-attachments/assets/142b28c9-b9ff-4735-89d7-f52c81139400" />
+
 
 
 **Paso 3:** Creamos el contenedor de PGAdmin (`pgadmin`) y lo expondremos en el puerto 8090.
 
 Figura 3. Comando **"docker run -d --name pgadmin -p 8090:80 -e "**. 
 
+<img width="909" alt="2" src="https://github.com/user-attachments/assets/989cd011-c484-4f3c-b221-bf7625f25274" />
+
+<img width="1045" alt="5" src="https://github.com/user-attachments/assets/d8056f63-a906-4d39-9e39-0cb03bb41e52" />
+
+<img width="1044" alt="6" src="https://github.com/user-attachments/assets/ddd488a6-dbf4-4a7b-aef3-41c4cce9796c" />
 
 
 **Paso 4:** Crear una red personalizada llamada `redleo` 
 
 Figura 4. Comando **"docker network create --attachable  "**. 
+
+<img width="550" alt="4" src="https://github.com/user-attachments/assets/32df07c1-05bc-47ba-b299-2b17a9b672d7" />
 
 
 
@@ -81,15 +96,26 @@ Figura 4. Comando **"docker network create --attachable  "**.
 
 Figura 5. Comando **"docker network connect "**. 
 
+<img width="547" alt="11" src="https://github.com/user-attachments/assets/9e8482d1-8233-4cda-9226-8c16b821075a" />
+
+<img width="1083" alt="7" src="https://github.com/user-attachments/assets/f34ecc31-6b57-41a9-8978-e30a0cac6a00" />
+
+
 
 **Paso 6:** Verificar los contenedores conectados a la red. Este comando muestra las IPs asignadas a cada contenedor.
 
 Figura 6. Comando **"docker inspect"**. 
 
+<img width="916" alt="9" src="https://github.com/user-attachments/assets/5cf0b0a0-debf-4b91-8d52-8c8e68998a1c" />
+
 
 **Paso 7:** Crear una base de datos en phpMyAdmin.
 
 Figura 7. Nombre de base de datos **"appweb "**. 
+
+<img width="1082" alt="8" src="https://github.com/user-attachments/assets/7cb7a5d5-16c6-452e-a5e5-570630fa18c8" />
+
+<img width="1066" alt="10" src="https://github.com/user-attachments/assets/87c12b74-cbb8-4073-8ad9-905fc643c130" />
 
 
 
@@ -103,6 +129,11 @@ Además, la creación de una red Docker personalizada y la conexión de los cont
 
 En resumen, esta práctica fue muy útil para adquirir habilidades en la configuración y manejo de bases de datos dentro de contenedores Docker, y cómo acceder a herramientas como PGAdmin para administrar esos datos de manera eficiente y controlada.
 
+<img width="1045" alt="5" src="https://github.com/user-attachments/assets/57b485cc-835f-4392-9b40-5e10b3d50025" />
+
+<img width="1044" alt="6" src="https://github.com/user-attachments/assets/09d3fb30-16ac-4b27-920c-0bfdaa1e6f77" />
+
+<img width="1066" alt="10" src="https://github.com/user-attachments/assets/6100b52a-fc60-434c-8f71-e647c2d0ff47" />
 
 ## 10. Bibliografía
 
